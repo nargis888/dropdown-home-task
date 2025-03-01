@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100vw;
+    background-color: rgb(8, 142, 214);
+    padding: 20px;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    color: azure;
+    font-size: 25px;
+
+}
+
+#nav li:nth-child(2){
+    position: relative;
+    
+}
+
+#drop{
+    position: absolute;
+    width: 300px;
+    background-color: rgb(79, 76, 76);
+    list-style-type: none;
+    top: 40px;
+   /* display: none; */
+
+}
+
+#drop li{
+    
+    padding-left: 17px;
+    padding: 10px;
+}
+
+#nav li:nth-child(2):hover #drop{
+    display: block;
+    cursor: pointer;
+}
+
+#drop li:hover{
+     background-color: rgb(8, 142, 214);
+}
